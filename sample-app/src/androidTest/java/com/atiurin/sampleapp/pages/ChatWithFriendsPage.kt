@@ -38,4 +38,17 @@ object ChatWithFriendsPage {
             ViewMatchers.withText("Kak dela deliodela?")
         )
     }
+
+    val emmetBrown: Matcher<View> by lazy {
+        Matchers.allOf(
+            ViewMatchers.withId(R.id.tv_name),
+            ViewMatchers.withText("Emmet Brown")
+        )
+    }
+    val friend17: Matcher<View> by lazy {
+        Matchers.allOf(
+            ViewMatchers.withId(R.id.tv_name),
+            ViewMatchers.withText("Friend 17")
+        )
+    }
 }
