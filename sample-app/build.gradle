@@ -125,3 +125,6 @@ dependencies {
     //magic has began
     androidTestImplementation project(':ultron')
 }
+android {
+    namespace "com.atiurin.sampleapp"
+}
