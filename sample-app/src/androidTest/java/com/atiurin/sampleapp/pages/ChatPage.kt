@@ -1,6 +1,7 @@
 package com.atiurin.sampleapp.pages
 
 import android.view.View
+import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.*
 import com.atiurin.sampleapp.R
 import com.atiurin.sampleapp.framework.*
@@ -25,6 +26,8 @@ object ChatPage : Page<ChatPage>() {
     val inputMessageText = withId(R.id.message_input_text)
     val sendMessageBtn = withId(R.id.send_button)
     val toolbarTitle = withId(R.id.toolbar_title)
+    val actualFriendName: Matcher<View> = ViewMatchers.withId(R.id.toolbar_title)
+
 
     fun getMessageListItem(text: String): ChatRecyclerItem {
         return messagesList.getItem(hasDescendant(
