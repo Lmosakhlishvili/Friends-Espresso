@@ -9,6 +9,8 @@ import org.hamcrest.Matchers
 
 object BurgerMenuPage {
     val customClick: Matcher<View> by lazy { Matchers.allOf(withId(R.id.design_menu_item_text), withText("Custom Clicks"))}
+    val uiElementsClick: Matcher<View> by lazy { Matchers.allOf(withId(R.id.design_menu_item_text), withText("UiElements"))}
+
 }
 
 
